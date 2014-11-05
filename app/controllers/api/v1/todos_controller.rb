@@ -26,7 +26,7 @@ class Api::V1::TodosController < ApplicationController
   end
 
   def destroy
-    @todo.load_todo
+    load_todo
     @todo.delete
   end
 
